@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--metaparavideo-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--libreria de jq-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--libreria js para video-->
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--css jaime-->
+    <link rel="stylesheet" href="css/general.css">
+    <!--Links para video-->
+    <link rel="stylesheet" href="css/video-js.css">
+    <!--scriptVideo-->
+    <script src="js/video.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="img/iconos/favicom.ico">
+
+    <script src="js/ejemplo1.js"></script>
+
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet" />
+    <!-- BOOTSTRAP 5 -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
+    <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <!--ICONOS-->
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-heart-eyes"
+        viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+        <path
+            d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z" />
+    </svg>
+
+
+
+</head>
+
+<body>
+    <a id="arriba"></a>
+    <!-- Barra de navegacion -->
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light bg-azul-oscuro-index fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand logoMov" href="#arriba">
+                    <img src="img/logos/LOGO4.png" alt="Logo Oviedo Espacio Verde" style="width: 210px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white menu btn-lg rounded-5" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Parques
+                            </a>
+                            <ul class="dropdown-menu bg-success-subtle" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item text-black fs-5" href="PARQUES/san francisco/paginas/san francisco.html">San Francisco</a></li>
+                                <li><a class="dropdown-item text-black fs-5"
+                                        href="PARQUES/Purificacion Tomas/paginas/purificacion tomas.html">Purificación
+                                        Tomás</a></li>
+                                <li><a class="dropdown-item text-black fs-5"
+                                        href="PARQUES/Parque Invierno/paginas/parque invierno.html">De Invierno</a></li>
+                                <li><a class="dropdown-item text-black fs-5"
+                                        href="PARQUES/parque oeste/paginas/parque oeste.html">Del Oeste</a></li>
+                                <li><a class="dropdown-item text-black fs-5"
+                                        href="PARQUES/naranco/paginas/Naranco.html">Monte Naranco</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white menu btn-lg rounded-5" href="#verde">Zonas Verdes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white menu btn-lg rounded-5" href="#nosotros">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white menu btn-lg rounded-5" href="#videos">Multimedia</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--Carrusel-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="slider col-12 col">
+
+
+                <div class="list">
+
+                    <div class="item">
+                        <img src="img/alargadas/parquesanfranciscoportada.jpg" alt="" class="img-fluid">
+
+                        <div class="content">
+                            <div class="type sombraTitulos">PARQUE</div>
+                            <div class="title sombraTitulos">SAN <br> FRANCISCO</div>
+
+                            <div class="description fs-4">
+                                <p class="sombraTexto">El pulmón emblemático de Oviedo. Situado en el corazón de la
+                                    ciudad.</p>
+                            </div>
+                            <div class="mg-btn">
+                                <a href="PARQUES/san francisco/paginas/san francisco.html" class="btn1234">Ver Parque</a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/alargadas/purificacion2.jpg" alt="" class="img-fluid">
+
+                        <div class="content">
+                            <div class="type sombraTitulos">PARQUE</div>
+                            <div class="title sombraTitulos">PURIFICACIÓN <br> TOMÁS</div>
+
+                            <div class="description fs-4">
+                                <p class="sombraTexto">Un parque para recorrerlo y disfrutarlo con sus admirables
+                                    vistas.
+
+                                </p>
+
+                            </div>
+
+                            <div class="mg-btn">
+                                <a href="PARQUES/Purificacion Tomas/paginas/purificacion tomas.html" class="btn1234">Ver
+                                    Parque</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/alargadas/invierno.jpg" alt="" class="img-fluid">
+
+                        <div class="content">
+                            <div class="type sombraTitulos">PARQUE</div>
+                            <div class="title sombraTitulos">DE <br> INVIERNO</div>
+
+                            <div class="description  fs-4">
+                                <p class="sombraTexto">La naturaleza en estado puro en la ciudad. Un lugar de paz y
+                                    naturaleza
+                                </p>
+                            </div>
+                            <div class="mg-btn">
+                                <a href="PARQUES/Parque Invierno/paginas/parque invierno.html" class="btn1234">Ver
+                                    Parque</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="img/alargadas/oestenueva.jpg" alt="" class="img-fluid">
+
+                        <div class="content">
+                            <div class="type sombraTitulos">PARQUE</div>
+                            <div class="title sombraTitulos">DEL <br> OESTE</div>
+
+                            <div class="description  fs-4">
+                                <p class="sombraTexto">Disfrutar la naturaleza con 5 sentidos un espacio lleno de
+                                    tranquilidad</p>
+                            </div>
+                            <div class="mg-btn">
+                                <a href="PARQUES/parque oeste/paginas/parque oeste.html" class="btn1234">Ver Parque</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="img/alargadas/montenarancoptim.jpg" alt="" class="img-fluid">
+
+                        <div class="content">
+                            <div class="title sombraTitulos">EL</div>
+                            <div class="type sombraTitulos">MONTE</div>
+                            <div class="title sombraTitulos">NARANCO</div>
+
+                            <div class="description  fs-4">
+                                <p class="sombraTexto">Conocido por su valor natural es famoso por tener notables
+                                    símbolos
+                                </p>
+                            </div>
+                            <div class="mg-btn">
+                                <a href="PARQUES/naranco/paginas/Naranco.html" class="btn1234">Ver Parque</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="thumbnail">
+
+                    <div class="item">
+                        <img src="img/alargadas/parquesanfranciscoportada.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="item">
+                        <img src="img/alargadas/purificacion2.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="item">
+                        <img src="img/alargadas/invierno.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="item">
+                        <img src="img/alargadas/oestenueva.jpg" alt="" class="img-fluid">
+                    </div>
+                    <div class="item">
+                        <img src="img/alargadas/montenarancoptim.jpg" alt="" class="img-fluid">
+                    </div>
+
+                </div>
+
+
+                <div class="nextPrevArrows">
+                    <button class="prev">&lt;
+                    </button>
+                    <button class="next"> > </button>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!--Información-->
+    <div class="row m-5"></div>
+    <div class="view">
+        <div class="block">
+
+            <div class="row m-5">
+                <div class="col-2"></div>
+                <div class=" col-12 col-md-8">
+                    <h2 class="text-center display-5 text-primary fw-bold">Naturaleza, Deporte y Bienestar</h2>
+                    <p class="fs-5 text-justify mt-3">
+                        <span class="fw-bold">Oviedo</span>, conocida por su rica historia y su belleza natural, ofrece
+                        a sus habitantes y visitantes una amplia red de parques y zonas verdes que invitan a la
+                        desconexión y al <span class="fw-bold">bienestar</span>. Estos espacios no solo son un pulmón
+                        verde en la ciudad, sino también el escenario perfecto para disfrutar de actividades al aire
+                        libre, mejorar tu salud física y mental, y reconectar con la <span
+                            class="fw-bold">naturaleza</span>. <br><br>
+                    </p>
+                    <p class="d-none d-md-block col-md-12 fs-5 text-justify">
+                        Desde un tranquilo paseo por el icónico Campo San Francisco hasta una jornada de senderismo en
+                        el majestuoso Monte Naranco, los parques de Oviedo te ofrecen la oportunidad de mantenerte
+                        activo, respirar aire puro y relajarte en entornos naturales únicos. Descubre cómo estos
+                        rincones verdes pueden ayudarte a llevar una vida más saludable y equilibrada.</p>
+
+                </div>
+                <div class="col-2"></div>
+
+            </div>
+        </div>
+    </div>
+    <!-- img gift -->
+    <div class="container my-5">
+        <div class="row g-0">
+            <div class="col-12">
+                <div class="video-container">
+                    <video autoplay loop muted playsinline>
+                        <source src="video/Giftreduc.mp4" type="video/mp4">
+                        Tu navegador no soporta el elemento de video.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="mt-5"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 d-md-none d-lg-block col-lg-12">
+                <img src="img/alargadas/logo-mio.png" alt="" class="img-fluid w-100 view block">
+            </div>
+
+            <div class="col-12  mt-5">
+                <h2 class="text-center display-6 ">"Un recorrido por sus espacios verdes y parques para
+                    disfrutar la naturaleza"</h2>
+                <p class="fs-5 text-justify my-5 p-3 ">
+                    <span class="fw-bold">Oviedo</span>, capital del Principado de Asturias, no solo es conocida por su
+                    riqueza cultural y arquitectónica, sino también por sus amplios y cuidados <span
+                        class="fw-bold">espacios verdes</span>. La ciudad ofrece una variedad de parques y zonas
+                    ajardinadas perfectas para pasear, relajarse y disfrutar de la naturaleza en pleno corazón urbano.
+                </p>
+                <p class="d-none d-lg-block col-lg-12 fs-5 text-justify">
+                    Lugares emblemáticos como el <span class="fw-bold">Parque de San Francisco</span>, con sus frondosos
+                    árboles centenarios, o el <span class="fw-bold">Parque de Invierno</span>, ideal para actividades al
+                    aire libre, son solo algunos de los rincones que invitan a desconectar. Estos espacios verdes son el
+                    pulmón de Oviedo, un refugio para los amantes de la tranquilidad y la belleza natural.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--parallax-->
+    <main>
+        <section class="sec3 d-sm-block d-md-none d-lg-none"></section>
+        <section class="sec1 d-none d-md-block"></section>
+        <a id="verde"></a>
+        <div class="contain">
+            <!-- <div class="contain"> -->
+            <p class="text-black fs-1 alert alert-black fst-italic">Zonas Verdes
+                <img src="img/logos/logo-s.png" alt="" style="width: 200px">
+            </p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header bg-info text-center fs-5 fst-italic fw-bold rounded-top-circle">
+                                PARQUE DEL CAMPILLIN
+                            </div>
+                            <img src="img/cuadradas/campillin.jpg" alt="" class="card-img-top">
+                            <div class="card-body justificar">
+                                El Parque del Campillín es un pequeño y encantador espacio verde situado en el casco
+                                antiguo. Ofrece un ambiente tranquilo y relajante, ideal para pasear o descansar.
+                                Rodeado de edificios históricos y cercano a la Muralla Medieval.</div>
+                            <div class="card-footer alert alert-secondary text-center">
+                                <a href="PARQUES/parque campillin/paginas/campillin.html" class="btn1234">Pulse Aquí</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header bg-info text-center fs-5 fst-italic fw-bold rounded-top-circle">
+                                LA RODRIGA
+                            </div>
+                            <img src="img/cuadradas/larodrigamejorada.jpg" alt="" class="card-img-top giroImagen">
+                            <div class="card-body justificar">
+                                Los Jardines de La Rodriga, situados en el centro de Oviedo en la calle Campomanes, son
+                                un pequeño oasis de tranquilidad poco conocido por los propios habitantes. Es un lugar
+                                ideal para pasear, desconectar y disfrutar de la naturaleza.
+
+                            </div>
+                            <div class="card-footer alert alert-secondary text-center">
+                                <a href="#" class="btn1234">Pulse Aquí</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="card">
+                            <div class="card-header bg-info text-center fs-5 fst-italic fw-bold rounded-top-circle">
+                                SANTULLANO
+                            </div>
+                            <img src="img/cuadradas/santullano.jpg" alt="" class="card-img-top">
+                            <div class="card-body justificar">
+                                La iglesia de San Julián de los Prados, conocida también como Santullano, es uno de los
+                                mayores exponentes del arte prerrománico asturiano y fue declarada Patrimonio de la
+                                Humanidad por la UNESCO. Es un lugar lleno de historia y cultura.
+                            </div>
+                            <div class="card-footer alert alert-secondary text-center">
+                                <a href="PARQUES/Santullano/paginas/Santullano.html" class="btn1234">Pulse Aquí</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="m-3"></div>
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header bg-info text-center fs-5 fst-italic fw-bold rounded-top-circle">
+                                SAN PEDRO DE LOS ARCOS
+                            </div>
+                            <img src="img/cuadradas/sanpedroarcos.jpg" alt="" class="card-img-top giroImagen">
+                            <div class="card-body justificar">
+                                San Pedro de los Arcos es una iglesia de estilo neorrománico ubicada en Oviedo.
+                                El templo actual fue construido en 1910 por el arquitecto Luis Bellido, aunque
+                                en su lugar existían capillas desde la época visigótica. Reune tradición y encanto.
+                            </div>
+                            <div class="card-footer alert alert-secondary text-center">
+                                <a href="#" class="btn1234">Pulse Aquí</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <div class="card-header bg-info text-center fs-5 fst-italic fw-bold rounded-top-circle">
+                                PISTA FINLANDESA
+                            </div>
+                            <img src="img/cuadradas/pista-finlandesa.jpg" alt="" class="card-img-top">
+                            <div class="card-body justificar">
+                                La Pista Finlandesa en Oviedo es una popular ruta verde de 5,3 kilómetros, situada en la
+                                falda del Monte Naranco. Se caracteriza por su recorrido llano, ideal para caminar,
+                                correr o hacer ejercicio, con estaciones equipadas.
+
+                            </div>
+
+                            <div class="card-footer alert alert-secondary text-center">
+                                <a href="PARQUES/Pista Finlandesa/paginas/pista finlandesa.html" class="btn1234">Pulse
+                                    Aquí</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-12  col-lg-4">
+                        <div class="card">
+                            <div class="card-header bg-info text-center fs-5 fst-italic fw-bold rounded-top-circle">
+                                SENDA FLUVIAL RIO NORA
+                            </div>
+                            <img src="img/cuadradas/Meandros-del-Nora-Rañeces.jpg" alt=""
+                                class="card-img-top giroImagen">
+                            <div class="card-body justificar">
+                                La senda del Parque Fluvial del Río Nora es una ruta natural que sigue el curso del río
+                                Nora, ofreciendo un entorno perfecto para caminar, correr o ir en bicicleta. Esta senda
+                                conecta varias zonas verdes y atraviesa paisajes de gran belleza</div>
+                            <div class="card-footer alert alert-secondary text-center">
+                                <a href="#" class="btn1234">Pulse Aquí</a>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+        <section class="sec2 d-none d-md-block"></section>
+        <section class="sec4 d-sm-block d-md-none d-lg-none"></section>
+
+    </main>
+
+    <!--prueba-sobrenosotros-->
+    <a id="nosotros"></a>
+    <div class="row m-5"></div>
+    <div class="container view block">
+        <div class="row">
+            <div class="col-12  text-center" data-aos="fade-down" data-aos-delay="50">
+                <div class="section-title">
+                    <h1 class="display-4 fw-semibold">Sobre Nosotros</h1>
+                    <div class="line"></div>
+                    <p>Somos un grupo de alumnos/trabajadores apasionados por la naturaleza, el deporte y el bienestar,
+                        residentes en la hermosa ciudad de Oviedo, Asturias. Nuestro objetivo es compartir con todos los
+                        rincones verdes y las actividades al aire libre que esta ciudad tiene para ofrecer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-between align-items-center">
+            <div class=" col-12 col-md-6 col-lg-6" data-aos="fade-down" data-aos-delay="50">
+                <div class="image-zoom team-member">
+                    <div class=" image-zoom-wrapper ">
+                        <img src="img/cuadradas/sobrenosotros.jpg" alt="" class=" sombraFoto img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-down" data-aos-delay="150" class="col-lg-5 me-5">
+                <h1>Sobre el Proyecto</h1>
+                <p class="mt-3 mb-4">Nuestra misión es promover un estilo de vida saludable y activo, conectando a las
+                    personas con la naturaleza y fomentando el uso de los espacios verdes de Oviedo.</p>
+                <div class="d-flex pt-4 mb-3">
+                    <div class="iconbox me-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                            class="bi bi-envelope-arrow-up" viewBox="0 0 16 16">
+                            <path
+                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4.5a.5.5 0 0 1-1 0V5.383l-7 4.2-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-1.99zm1 7.105 4.708-2.897L1 5.383zM1 4v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1" />
+                            <path
+                                d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.354 1.25 1.25a.5.5 0 0 1-.708.708L13 12.207V14a.5.5 0 0 1-1 0v-1.717l-.28.305a.5.5 0 0 1-.737-.676l1.149-1.25a.5.5 0 0 1 .722-.016" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h5>Contáctanos</h5>
+                        <p>Si tienes alguna pregunta, sugerencia o simplemente quieres compartir tu experiencia en los
+                            parques de Oviedo, no dudes en contactarnos a través de [correo electrónico] o en nuestras
+                            redes sociales.</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-3">
+                    <div class="iconbox me-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                            class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path
+                                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h5>Siguenos en Linkedin</h5>
+                        <p>Puedes estar al día de todos nuestras noticias en la red de trabajo más importante. Estamos
+                            siempre abiertos a colaboraciones y sugerencias. Puedes contactarnos a través de LinkedIn
+                        </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="iconbox me-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                            class="bi bi-globe2" viewBox="0 0 16 16">
+                            <path
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h5>Nuestro compromiso</h5>
+                        <p>Nuestro equipo está formado por personas apasionadas y dedicadas, que trabajan con entusiasmo
+                            para hacer de Oviedo un lugar más saludable y feliz. Nos enorgullece contribuir al bienestar
+                            de nuestra comunidad.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="m-3"></div>
+        </div>
+    </div>
+    <div class="m-5"></div>
+
+    <a id="videos"></a>
+    <div class="row m-3"></div>
+
+    <!--seccionvideonueva-->
+    <div class="container-fluid">
+
+
+        <header>
+            <h1 class="titulo text-center alert alert-info display-3">Nuestros Parques</h1>
+        </header>
+
+
+    </div>
+
+    <div class="container py-5">
+        <div class="row align-items-center">
+            <!-- Video Column -->
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="video-container shadow">
+                    <img src="img/logos/logo-ovd-footer.png" alt="Video thumbnail" class="img-fluid w-25">
+                    <button class="custom-play-button" onclick="playVideo(this)">
+                        <div class="play-icon"></div>
+                    </button>
+                    <video controls class="w-100" poster="img/cuadradas/fondo-reproductor.jpg">
+                        <source src="video/1017.mp4" type="video/mp4">
+
+                    </video>
+                </div>
+            </div>
+
+            <!-- Content Column -->
+            <div class="col-lg-6">
+                <div class="content-section ps-lg-4">
+                    <h3 class="text-center">DESCUBRE LO MEJOR DE NUESTROS PARQUES</h3>
+                    <p>Oviedo, capital del Principado de Asturias, es una ciudad que combina a la perfección historia,
+                        cultura y naturaleza. En sus numerosos parques y zonas verdes, los habitantes y visitantes
+                        encuentran un refugio de tranquilidad y un espacio para disfrutar del aire libre. Con el
+                        objetivo de resaltar la belleza y la diversidad de estos lugares, hemos creado una serie de
+                        videos que exploran los parques más emblemáticos de la ciudad.</p><br />
+
+                    <p class="d-none d-md-block col-md-12">Estos videos no solo muestran su riqueza paisajística, sino
+                        también su importancia como espacios de encuentro, recreo y bienestar para la comunidad. A
+                        través de estos recorridos visuales, invitamos a todos a descubrir o redescubrir los encantos
+                        naturales de Oviedo, desde sus grandes parques urbanos hasta rincones más escondidos que,
+                        juntos, hacen de esta ciudad un lugar único para vivir y visitar.</p>
+
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="border-end pe-3 me-3">
+                            <small class="text-muted">Duración</small>
+                            <p class="mb-0 fw-bold">3:45</p>
+                        </div>
+                        <div class="border-end pe-3 me-3">
+                            <small class="text-muted">Vistas</small>
+                            <p class="mb-0 fw-bold">1.2K</p>
+                        </div>
+                        <div>
+                            <small class="text-muted">Calidad</small>
+                            <p class="mb-0 fw-bold">HD</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary px-4 py-2">Más información</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+    <div class="row m-5"></div>
+
+
+
+    <!--piefondonegro-->
+    <!---------------------------------------------------------------------------------------------------------
+                                          footer
+    ---------------------------------------------------------------------------------------------------------->
+
+    <div class="container-fluid bg-azul-oscuro-index text-gris">
+        <div class="container pt-5">
+            <div class="row">
+                <div class=" col-12 col-md-3">
+                    <p class="fw-bold fs-5 text-center">Sobre Nosotros</p>
+                    <p class="text-justify">
+                        Somos un equipo de desarrolladores web dedicados a crear experiencias únicas. <br> Nos
+                        esforzamos por transformar la visita a los parques por excelencia de Oviedo en experiencias
+                        digitales visualmente atractivas, intuitivas y fáciles de usar.
+                    </p>
+                    <p class="mb-4"></p>
+                </div>
+                <div class=" col-12 col-md-3 text-center">
+                    <p class="fw-bold fs-5 mb-4">Lo Más Importante</p>
+                    <a class="nav-link mb-4" href="PARQUES/san francisco/paginas/san francisco.html">Parque San
+                        Francisco</a>
+                    <a class="nav-link mb-4" href="PARQUES/Purificacion Tomas/paginas/purificacion tomas.html">Parque
+                        Purificación Tomás</a>
+                    <a class="nav-link mb-4" href="PARQUES/Parque Invierno/paginas/parque invierno.html">Parque de
+                        Invierno</a>
+                    <a class="nav-link mb-4" href="PARQUES/parque oeste/paginas/parque oeste.html">Parque del Oeste</a>
+                    <a class="nav-link mb-4" href="PARQUES/naranco/paginas/Naranco.html">Monte del Naranco</a>
+                </div>
+                <div class=" col-12 col-md-3 text-center">
+                    <p class="fw-bold fs-5">Redes Sociales</p>
+                    <a href="https://www.youtube.com/@naturalezadeporteybienestar" target="_blank">
+                        <img class="me-3" src="img/iconos/youtube.png" alt="logotipo de youtube" width="52px"></a>
+                    <a href="https://www.facebook.com/empleoayuntamientodeoviedo" target="_blank">
+                        <img class="me-3" src="img/iconos/facebook.png" alt="logotipo de facebook" width="55px"></a>
+                    <a href="mailto:naturalezadeporteybienestar.info@correo.com">
+                        <img class="me-3" src="img/iconos/correo.png" alt="logotipo de facebook" width="55px"></a>
+                    <br><br>
+
+                </div>
+                <div class=" col-12 col-md-3">
+                    <img class=" logo-ovd-pie-md img-fluid d-none d-md-block " src="img/logos/logo-ovd-footer.png"
+                        alt="logo de los desarrolladores"> <!-- para tablet  ordenador-->
+                    <img class="d-sm-block d-md-none mx-auto d-block logo-ovd-pie my-2"
+                        src="img/logos/logo-ovd-footer.png" alt="logo de los desarrolladores"> <!-- para movil-->
+                </div>
+            </div>
+            <div class="row ">
+                <hr>
+                <div class="col-6 ">
+                    <p class="text-politica"> © Copyright 2024. <br> Todos los derechos reservados.</p>
+                </div>
+                <div class="col-6">
+                    <p class="text-end">
+                        <a class="text-gris text-decoration-none text-end text-politica"
+                            href="PARQUES/politicas/mapa web.html" target="_blank">Mapa Web.</a>
+                        <br>
+                        <a class="text-gris text-decoration-none text-end text-politica"
+                            href="PARQUES/politicas/politica privacidad.html" target="_blank">Política de
+                            Privacidad.</a> <br>
+                        <a class="text-gris text-decoration-none text-end text-politica"
+                            href="PARQUES/politicas/accesibilidad web.html" target="_blank">Accesibilidad Web.</a> <br>
+
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-12 pb-3">
+                <img class=" w-pie d-none d-md-block img-fluid mx-auto d-block" src="img/logos/Banner-WEB.jpg" alt="">
+                <!--ordenador-->
+                <img class=" w-100d-sm-block d-md-none img-fluid mx-auto d-block" src="img/logos/Banner-WEB.jpg" alt=""
+                    style="height:35px"> <!--movil-->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+
+    <!--scriptVideos-->
+
+    <!--
+   <script>
+		var reproductor = videojs('fm-video', {
+			fluid: true
+		});
+	</script>
+-->
+    <!--Boton flotante  -->
+
+    <div class="floating-button-container" id="floatingButtonContainer">
+        <button class="main-button" id="mainButton"></button>
+        <button class="scroll-top-button" id="scrollTopButton">&#9650;</button>
+        <a href="PARQUES/san francisco/paginas/san francisco.html" class="option-button">
+            <img src="img/iconos/1.png" alt="Parque San Francisco">
+            <span class="tooltip">Parque San Francisco</span>
+        </a>
+        <a href="PARQUES/Purificacion Tomas/paginas/purificacion tomas.html" class="option-button">
+            <img src="img/iconos/2.png" alt="Purificación Tomás">
+            <span class="tooltip">Purificación Tomás</span>
+        </a>
+        <a href="PARQUES/Parque Invierno/paginas/parque invierno.html" class="option-button">
+            <img src="img/iconos/3.png" alt="Parque de Invierno">
+            <span class="tooltip">Parque de Invierno</span>
+        </a>
+        <a href="PARQUES/parque oeste/paginas/parque oeste.html" class="option-button">
+            <img src="img/iconos/4.png" alt="Parque del Oeste">
+            <span class="tooltip">Parque del Oeste</span>
+        </a>
+        <a href="PARQUES/naranco/paginas/Naranco.html" class="option-button">
+            <img src="img/iconos/5.png" alt="NARANCO">
+            <span class="tooltip">Naranco</span>
+        </a>
+    </div>
+    <script src="js/botones.js"></script>
+
+</body>
+
+</html>
